@@ -22,6 +22,7 @@ import android.widget.TextView;
 
 import com.example.vedkey.Adapter.Tutorial_List_Adapter;
 import com.example.vedkey.Bean.MultiplicationBean;
+import com.example.vedkey.Tryityourself.FifthTRyItyourself;
 import com.example.vedkey.Tryityourself.FirstTryityourself;
 import com.example.vedkey.Tryityourself.ForthTryitYourself;
 import com.example.vedkey.Tryityourself.SecondTryityourself;
@@ -213,15 +214,15 @@ public class ListFragment extends Fragment implements OnClickListener
 							ft.commit();
 						}
 					}
-					/*else if(position==4)
+					else if(position==4)
 					{
-						fragment = new FifthTutorial();
+						fragment = new FifthTRyItyourself();
 						if(fragment!=null)
 						{
 							ft.replace(R.id.container, fragment);
 							ft.commit();
 						}
-					}*/
+					}
 						
 					
 						

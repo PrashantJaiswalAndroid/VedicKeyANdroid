@@ -21,6 +21,7 @@ import com.example.vedkey.ListFragment;
 import com.example.vedkey.NavigationActivity;
 import com.example.vedkey.R;
 import com.example.vedkey.SharedPref;
+import com.example.vedkey.Tryityourself.FifthTRyItyourself;
 
 public class FifthTutorial extends Fragment {
 
@@ -142,23 +143,21 @@ int nu=0;
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-	/*			FragmentManager fm = getActivity().getSupportFragmentManager();
+				FragmentManager fm = getActivity().getSupportFragmentManager();
 				FragmentTransaction ft = fm.beginTransaction();
 		       
 		        	fragment = new ListFragment();
 		        	if(fragment!=null)
 					{
+		        		
 		        		NavigationActivity.header="Try it yourself";
-						ft.replace(R.id.container, fragment);
-						ft.commit();
-		        		NavigationActivity.header="Try it yourself";
-		        		fragment = new OptionThirdtryyourself();
+		        		fragment = new FifthTRyItyourself();
 						if(fragment!=null)
 						{
 							ft.replace(R.id.container, fragment);
 							ft.commit();
 						}
-					}*/
+					}
 		        	
 		        
 			}

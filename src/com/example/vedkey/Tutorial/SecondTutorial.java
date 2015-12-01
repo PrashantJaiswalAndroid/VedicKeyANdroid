@@ -156,7 +156,7 @@ public class SecondTutorial extends Fragment {
 						ft.replace(R.id.container, fragment);
 						ft.commit();*/
 		        		NavigationActivity.header="Try it yourself";
-		        		fragment = new ThirdTutorial();
+		        		fragment = new SecondTryityourself();
 						if(fragment!=null)
 						{
 							ft.replace(R.id.container, fragment);

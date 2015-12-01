@@ -108,6 +108,7 @@ private KeyListener listener1,listenercross,listenervertical;
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				hideSoftKeyboard() ;
 				if(edt1.getText().toString().equalsIgnoreCase(""))
 				{
 
@@ -190,7 +191,7 @@ private KeyListener listener1,listenercross,listenervertical;
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
+				hideSoftKeyboard() ;
 
 				edt1.setText("");
 				
@@ -224,7 +225,7 @@ private KeyListener listener1,listenercross,listenervertical;
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				hideSoftKeyboard() ;
 		
 
 				if(!layoutsteps1edttxt2.getText().toString().equalsIgnoreCase(""))
@@ -320,7 +321,7 @@ private KeyListener listener1,listenercross,listenervertical;
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				
-				
+				hideSoftKeyboard() ;
 
 				if(!layout2number1.getText().toString().equalsIgnoreCase(""))
 				{
