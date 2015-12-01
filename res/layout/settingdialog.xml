@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <RelativeLayout 
+        android:id="@+id/musiclayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        >
+        <TextView 
+            android:id="@+id/musictxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:textColor="@color/txtcolor"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_18"/>
+        
+        <ImageView 
+            android:id="@+id/musiconoff"
+            android:padding="@dimen/dimen_2"
+            android:layout_below="@+id/musictxt"
+            android:layout_alignLeft="@+id/musictxt"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="wrap_content"
+            android:src="@drawable/switch_on"/>
+        
+    </RelativeLayout>
+    
+     
+       <RelativeLayout 
+        android:id="@+id/seekbarlayout"
+        android:layout_below="@+id/musiclayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        >
+        <TextView 
+            android:id="@+id/volumetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume Control"
+            android:textColor="@color/txtcolor"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_18"/>
+        
+          <SeekBar
+         android:id="@+id/seekBar1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/volumetxt"
+         android:layout_marginTop="@dimen/dimen_5" />
+        
+    </RelativeLayout>
+
+ 
+   
+</RelativeLayout>
