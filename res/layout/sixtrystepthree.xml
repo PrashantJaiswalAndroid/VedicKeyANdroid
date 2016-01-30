@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Vertically and Crosswise diagram"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/txt23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt22"
+        android:layout_marginLeft="@dimen/dimen_110"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="8"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt22"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_100"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+     <ImageView 
+        android:id="@+id/crossone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt23"
+        android:layout_marginLeft="@dimen/dimen_1"
+        android:background="@drawable/one_cross"/>
+
+    <TextView
+        android:id="@+id/txt25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/crossone"
+        android:layout_marginLeft="@dimen/dimen_110"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="9"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/crossone"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_100"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+    
+      <TextView
+        android:id="@+id/txt27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt26"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Multiply the left hand side digits of both numbers and add the carry of step 2(if any)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+      
+      
+       <EditText
+        android:id="@+id/txt28"
+        
+        
+        
+          android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xtext"
+        android:layout_below="@+id/txt27"
+       
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_toRightOf="@+id/xtext"
+        android:background="@drawable/editborder"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text="11"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20"
+        
+        
+        
+        
+     />
+       
+        <Button
+         android:id="@+id/btn1"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toRightOf="@+id/txt28"
+        android:layout_below="@+id/txt27"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+       
+       
+        <TextView
+        android:id="@+id/txt29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt28"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Write above results of step3, step2, step1 respectively and we will get the final answer."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+        
+        
+        
+          <EditText
+        android:id="@+id/txt30"
+        
+        
+        
+          android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xtext"
+        android:layout_below="@+id/txt29"
+       
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_toRightOf="@+id/xtext"
+        android:background="@drawable/editborder"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text="11"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20"
+        
+        
+        
+        
+     />
+       
+        <Button
+         android:id="@+id/btn2"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toRightOf="@+id/txt30"
+        android:layout_below="@+id/txt29"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+        
+        
+
+</RelativeLayout>

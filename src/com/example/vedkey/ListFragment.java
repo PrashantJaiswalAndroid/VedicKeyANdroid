@@ -22,15 +22,24 @@ import android.widget.TextView;
 
 import com.example.vedkey.Adapter.Tutorial_List_Adapter;
 import com.example.vedkey.Bean.MultiplicationBean;
+import com.example.vedkey.Tryityourself.EightTRyItyourself;
 import com.example.vedkey.Tryityourself.FifthTRyItyourself;
 import com.example.vedkey.Tryityourself.FirstTryityourself;
 import com.example.vedkey.Tryityourself.ForthTryitYourself;
+import com.example.vedkey.Tryityourself.NineTRyItyourself;
 import com.example.vedkey.Tryityourself.SecondTryityourself;
+import com.example.vedkey.Tryityourself.SixTRyItyourself;
+import com.example.vedkey.Tryityourself.TenTRyItyourself;
 import com.example.vedkey.Tryityourself.ThirdTryityourself;
+import com.example.vedkey.Tutorial.EightTutorial;
 import com.example.vedkey.Tutorial.FifthTutorial;
 import com.example.vedkey.Tutorial.FirstTutorial;
 import com.example.vedkey.Tutorial.FourtTutorial;
+import com.example.vedkey.Tutorial.NineTutorial;
 import com.example.vedkey.Tutorial.SecondTutorial;
+import com.example.vedkey.Tutorial.SevenTutorial;
+import com.example.vedkey.Tutorial.SixthTutorial;
+import com.example.vedkey.Tutorial.TenTutorial;
 import com.example.vedkey.Tutorial.ThirdTutorial;
 
 
@@ -171,6 +180,55 @@ public class ListFragment extends Fragment implements OnClickListener
 						}
 					}
 						
+					else if(position==5)
+					{
+						fragment = new SixthTutorial();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+					else if(position==6)
+					{
+						fragment = new SevenTutorial();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+						
+					else if(position==7)
+					{
+						fragment = new EightTutorial();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+						
+					else if(position==8)
+					{
+						fragment = new NineTutorial();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+						
+					else if(position==9)
+					{
+						fragment = new TenTutorial();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+						
 					}
 					else
 					{
@@ -223,6 +281,53 @@ public class ListFragment extends Fragment implements OnClickListener
 							ft.commit();
 						}
 					}
+					else if(position==5)
+					{
+						fragment = new SixTRyItyourself();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+						
+					/*else if(position==6)
+					{
+						fragment = new ();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}*/
+					else if(position==7)
+					{
+						fragment = new EightTRyItyourself();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+					else if(position==8)
+					{
+						fragment = new NineTRyItyourself();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+					else if(position==9)
+					{
+						fragment = new TenTRyItyourself();
+						if(fragment!=null)
+						{
+							ft.replace(R.id.container, fragment);
+							ft.commit();
+						}
+					}
+						
 						
 					
 						

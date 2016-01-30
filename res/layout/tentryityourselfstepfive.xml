@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt501"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Vertically and Crosswise diagram"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/txt502"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt501"
+        android:layout_marginLeft="@dimen/dimen_100"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt503"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt502"
+        android:layout_below="@+id/txt501"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_marginRight="@dimen/dimen_110"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+      <TextView
+        android:id="@+id/txt504"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt501"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_110"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+    
+     <ImageView
+         android:id="@+id/crooone"
+        android:layout_below="@+id/txt504"
+        android:layout_width="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="-10dp"
+        android:layout_height="@dimen/dimen_100"
+        android:src="@drawable/one_cross"/>
+
+    <TextView
+        android:id="@+id/txt505"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/crooone"
+        android:layout_marginLeft="@dimen/dimen_100"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt506"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt505"
+        android:layout_below="@+id/crooone"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_marginRight="@dimen/dimen_110"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+    
+     <TextView
+        android:id="@+id/txt507"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/crooone"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_marginRight="@dimen/dimen_110"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+   
+    
+    
+      <TextView
+        android:id="@+id/txt508"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt507"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Vertically multiply the first digit of both the numbers according to the diagram and add carry of step4(if any)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+      
+      
+      
+       <EditText
+        android:id="@+id/txt509"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt508"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/editborder"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20" >
+    </EditText>
+    
+         <Button
+         android:id="@+id/btn510"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toRightOf="@+id/txt509"
+        android:layout_below="@+id/txt508"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+      
+      
+      
+       
+       
+    
+        
+        
+         <TextView
+        android:id="@+id/txt511"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn510"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Write above results of step 5,step4, step3, step2 and step1 respectively, and we will get the final answer"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+         
+          <EditText
+        android:id="@+id/txt512"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt511"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/editborder"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20" >
+    </EditText>
+    
+         <Button
+         android:id="@+id/btn513"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toRightOf="@+id/txt512"
+        android:layout_below="@+id/txt511"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+         
+         
+       
+
+</RelativeLayout>

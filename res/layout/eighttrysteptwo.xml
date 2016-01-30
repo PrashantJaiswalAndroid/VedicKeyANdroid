@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Subtract the first number from the result of step 1 and we will get the final answer."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <EditText
+        android:id="@+id/txt2"
+         android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/txt1"
+        android:layout_toRightOf="@+id/diff1"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/editborder"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"/>
+    
+     <Button
+        android:id="@+id/btn1"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/txt1"
+        android:layout_toRightOf="@+id/txt2"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+
+   
+ 	<Button
+        android:id="@+id/btnsolutiontwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:background="@android:color/transparent"
+        android:text="Solution"
+        android:textSize="@dimen/dimen_10"
+        android:textColor="@android:color/black"
+         />
+  
+     
+
+</RelativeLayout>

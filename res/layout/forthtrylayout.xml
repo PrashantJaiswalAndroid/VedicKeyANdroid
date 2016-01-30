@@ -50,6 +50,7 @@
                 android:background="@drawable/editborder"
                 android:cursorVisible="true"
                 android:ems="10"
+                android:maxLength="3"
                 android:inputType="number"
                 android:paddingLeft="@dimen/dimen_2"
                 android:textColor="@color/black" >
@@ -81,6 +82,7 @@
                 android:background="@drawable/editborder"
                 android:cursorVisible="true"
                 android:ems="10"
+                android:maxLength="3"
                 android:inputType="number"
                 android:paddingLeft="@dimen/dimen_2"
                 android:textColor="@color/black" >

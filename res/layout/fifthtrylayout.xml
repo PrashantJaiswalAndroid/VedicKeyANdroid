@@ -49,6 +49,7 @@
                 android:layout_toRightOf="@+id/enterhere"
                 android:background="@drawable/editborder"
                 android:cursorVisible="true"
+                android:maxLength="2"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingLeft="@dimen/dimen_2"

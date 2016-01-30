@@ -85,6 +85,8 @@ private KeyListener listener1,listener2,listenercross,listenervertical;
 		edt2=(EditText)tryview.findViewById(R.id.editText2);
 		listener2 = edt2.getKeyListener();
 
+		edt1.setText("");
+		edt2.setText("");
 
 		stepstr1=(TextView)tryview.findViewById(R.id.textView3);
 		stepstr2=(TextView)tryview.findViewById(R.id.textView2);
@@ -453,6 +455,19 @@ private KeyListener listener1,listener2,listenercross,listenervertical;
 				{
 					if(!layout2number10.getText().toString().equalsIgnoreCase(""))
 					{
+					/*	
+						if(String.valueOf((x-sub)*(y-sub)).length()==1)
+						{
+							layout2number9.setText(String.valueOf(((x-sub))+" X "+String.valueOf(y-sub)+" =0"+String.valueOf((x-sub)*(y-sub))));
+							layout2finaltxt.setText("So the final answer is "+String.valueOf((x+(y-sub))+"0"+String.valueOf((x-sub)*(y-sub))));
+						}
+						else
+						{
+							layout2number9.setText(String.valueOf(((x-sub))+" X "+String.valueOf(y-sub)+" ="+String.valueOf((x-sub)*(y-sub))));
+							layout2finaltxt.setText("So the final answer is "+String.valueOf((x+(y-sub))+String.valueOf((x-sub)*(y-sub))));
+						}*/
+						
+						
 						int n=(x+(y-sub))*100;
 						
 						if(Integer.valueOf(layout2number10.getText().toString())==n+(x-sub)*(y-sub))

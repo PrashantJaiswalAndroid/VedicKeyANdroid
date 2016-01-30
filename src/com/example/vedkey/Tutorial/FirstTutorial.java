@@ -128,7 +128,7 @@ public class FirstTutorial extends Fragment {
 						ft.replace(R.id.container, fragment);
 						ft.commit();*/
 		        		NavigationActivity.header="Tutorial";
-		        		fragment = new FifthTutorial();
+		        		fragment = new NineTutorial();
 						if(fragment!=null)
 						{
 							ft.replace(R.id.container, fragment);

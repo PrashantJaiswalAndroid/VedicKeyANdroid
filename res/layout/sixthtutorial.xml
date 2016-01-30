@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sixthtutorialtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:padding="@dimen/dimen_5"
+        android:text="Multiplicaton of two-digit numbers using Vertically and crosswise methods"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/sixthtutorialforexampletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sixthtutorialtextView1"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text="For Example----)"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/sixthtutorialexampletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sixthtutorialforexampletxt"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text="92 x 96"
+        android:textColor="@color/txtcolor" />
+
+    <Button
+        android:id="@+id/sixthtutorialanotherexamplebtn"
+           android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sixthtutorialforexampletxt"
+        android:background="@drawable/another"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+
+    <TextView
+        android:id="@+id/sixthtutorialsteps1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sixthtutorialanotherexamplebtn"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/sixthtutorialsteps2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sixthtutorialanotherexamplebtn"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step2"
+        android:focusable="false"
+		android:clickable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+    
+    
+      <TextView
+        android:id="@+id/sixthtutorialsteps3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sixthtutorialanotherexamplebtn"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step3"
+        android:focusable="false"
+		android:clickable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        layout="@layout/footerlayout" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/sixthtutorialsteps1"
+        android:layout_marginTop="@dimen/dimen_10" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/sixthtutoriallayoutsteps1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/sixthtutorialstepone"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/sixthtutoriallayoutsteps2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/sixthtutorialsteptwo"
+                android:visibility="gone" />
+            
+            
+             <include
+                android:id="@+id/sixthtutoriallayoutsteps3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/sixthtutorialstepthree"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

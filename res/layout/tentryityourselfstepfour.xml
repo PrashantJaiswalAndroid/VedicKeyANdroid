@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <TextView
+        android:id="@+id/txt401"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Vertically and Crosswise diagram"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/txt402"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt401"
+        android:layout_marginLeft="@dimen/dimen_60"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt403"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt401"
+        android:layout_marginLeft="@dimen/dimen_90"
+        android:layout_marginRight="@dimen/dimen_110"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:layout_toRightOf="@+id/txt402"
+        android:text="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt404"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt401"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_marginRight="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:text="4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/crooone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_below="@+id/txt404"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:src="@drawable/two_cross" />
+
+    <TextView
+        android:id="@+id/txt405"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/crooone"
+        android:layout_marginLeft="@dimen/dimen_60"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt406"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crooone"
+        android:layout_marginLeft="@dimen/dimen_90"
+        android:layout_marginRight="@dimen/dimen_110"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_toRightOf="@+id/txt405"
+        android:text="2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt407"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/crooone"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_marginRight="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt408"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt407"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="First cross  multiplication according to the red arrow sign"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+    
+    
+    <EditText
+        android:id="@+id/txt409"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt408"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/editborder"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20" >
+    </EditText>
+    
+         <Button
+         android:id="@+id/btn410"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toRightOf="@+id/txt409"
+        android:layout_below="@+id/txt408"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+
+    
+    
+
+   
+
+    
+    <TextView
+        android:id="@+id/txt411"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn410"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Second cross multiplication according to the white arrow sign."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+    
+    
+    
+     <EditText
+        android:id="@+id/txt412"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt411"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/editborder"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20" >
+    </EditText>
+    
+         <Button
+         android:id="@+id/btn413"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toRightOf="@+id/txt412"
+        android:layout_below="@+id/txt411"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+    
+
+   
+
+
+    
+  
+      
+      
+      <TextView
+        android:id="@+id/txt414"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn413"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="And  add both  the above results with carry of step3(if any)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+      
+      
+       <EditText
+        android:id="@+id/txt415"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt414"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/editborder"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20" >
+    </EditText>
+    
+         <Button
+         android:id="@+id/btn416"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_toRightOf="@+id/txt415"
+        android:layout_below="@+id/txt414"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/check"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+      
+      
+     
+      
+</RelativeLayout>

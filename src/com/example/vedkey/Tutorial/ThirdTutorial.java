@@ -64,6 +64,7 @@ int nu=0;
 		getActivity().setTitle(NavigationActivity.header);
 		
 		Random r = new Random();
+
 		x = r.nextInt(100 - 90) + 90;
 		y = r.nextInt(100 - 90) + 90;
 		
@@ -108,6 +109,7 @@ int nu=0;
 				Random r = new Random();
 				x = r.nextInt(100 - 90) + 90;
 				y = r.nextInt(100 - 90) + 90;
+				
 				exampletxt.setText(x+" X "+y);
 			}
 		});
@@ -134,7 +136,7 @@ int nu=0;
 						ft.replace(R.id.container, fragment);
 						ft.commit();*/
 		        		NavigationActivity.header="Tutorial";
-		        		fragment = new SecondTutorial();
+		        		fragment = new FifthTutorial();
 						if(fragment!=null)
 						{
 							ft.replace(R.id.container, fragment);

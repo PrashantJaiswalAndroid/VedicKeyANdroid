@@ -85,6 +85,9 @@ private KeyListener listener1,listener2,listenercross,listenervertical;
 		listener1 = edt1.getKeyListener();
 		edt2=(EditText)tryview.findViewById(R.id.editText2);
 		listener2 = edt2.getKeyListener();
+		
+		edt1.setText("");
+		edt2.setText("");
 
 
 		stepstr1=(TextView)tryview.findViewById(R.id.textView3);

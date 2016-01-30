@@ -21,6 +21,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import com.example.vedkey.Nvigations.NavigationDrawerCallbacks;
 import com.example.vedkey.Nvigations.NavigationDrawerFragment;
 import com.example.vedkey.Service.MusicService;
+import com.example.vedkey.Tryityourself.EightTRyItyourself;
 
 
 public class NavigationActivity extends ActionBarActivity implements NavigationDrawerCallbacks {
@@ -95,6 +96,7 @@ public class NavigationActivity extends ActionBarActivity implements NavigationD
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.main, menu);
+		
 		return super.onCreateOptionsMenu(menu);
 	}
 	
@@ -105,11 +107,14 @@ public class NavigationActivity extends ActionBarActivity implements NavigationD
 	    case R.id.action_settings:
 	    	settingdialog();
 	        return true;
+	  
 	   
 	    default:
 	        return super.onOptionsItemSelected(item);
 	    }
 	}
+	
+
 	
 
 	@Override

@@ -93,6 +93,7 @@ int nu=0;
 
 		edt1=(EditText)rootView.findViewById(R.id.editText1);
 		listener1 = edt1.getKeyListener();
+		edt1.setText("");
 		
 		
 		layoutoneedt1=(EditText)rootView.findViewById(R.id.edttxt2);

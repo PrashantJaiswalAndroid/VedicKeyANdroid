@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tentutorialtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:padding="@dimen/dimen_5"
+        android:text="Muttiplying of any three-digit numbers"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+
+    <TextView
+                android:id="@+id/enterhere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tentutorialtextView1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="Enter Here: "
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tentutorialtextView1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_toRightOf="@+id/enterhere"
+                android:background="@drawable/editborder"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="@dimen/dimen_2"
+                android:textColor="@color/black" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/xtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tentutorialtextView1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_toRightOf="@+id/editText1"
+                android:text="X"
+                android:textColor="@color/txtcolor"
+                android:textSize="@dimen/dimen_20" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_below="@+id/tentutorialtextView1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/xtext"
+                android:background="@drawable/editborder"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:text=""
+                 android:textSize="@dimen/dimen_20"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="@dimen/dimen_2"
+                android:textColor="@color/black" >
+
+              
+            </EditText>
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_below="@+id/xtext"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/ok"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xtext"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@drawable/clear"
+                android:text="" />
+
+   
+
+    <TextView
+        android:id="@+id/tentutorialsteps1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/tentutorialsteps2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button1"
+        android:layout_toRightOf="@+id/tentutorialsteps1"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step2"
+        android:focusable="false"
+		android:clickable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+    
+       <TextView
+        android:id="@+id/tentutorialsteps3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button1"
+        android:layout_toRightOf="@+id/tentutorialsteps2"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step3"
+        android:focusable="false"
+		android:clickable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+       
+       
+          <TextView
+        android:id="@+id/tentutorialsteps4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button1"
+        android:layout_toRightOf="@+id/tentutorialsteps3"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step4"
+        android:focusable="false"
+		android:clickable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+          
+          
+             <TextView
+        android:id="@+id/tentutorialsteps5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button1"
+        android:layout_toRightOf="@+id/tentutorialsteps4"
+        android:layout_marginLeft="@dimen/dimen_10"
+     
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step5"
+        android:focusable="false"
+		android:clickable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+    
+    
+    
+    
+    
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/tentutorialsteps1"
+        android:layout_marginTop="@dimen/dimen_10" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/tentutoriallayoutsteps1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/tentryityourselfstepone"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/tentutoriallayoutsteps2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/tentryityourselfsteptwo"
+                android:visibility="gone" />
+            
+            
+             <include
+                android:id="@+id/tentutoriallayoutsteps3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/tentryityourselfstepthree"
+                android:visibility="gone" />
+             
+             
+               <include
+                android:id="@+id/tentutoriallayoutsteps4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/tentryityourselfstepfour"
+                android:visibility="gone" />
+               
+               
+                 <include
+                android:id="@+id/tentutoriallayoutsteps5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                layout="@layout/tentryityourselfstepfive"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
